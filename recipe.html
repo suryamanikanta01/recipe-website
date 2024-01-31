@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recipe Book</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Book</h1>
+        <button onclick="openAddPage()">Add Recipe</button>
+        <ul id="recipeList"></ul>
+        <div id="addRecipePage" class="hidden">
+            <h2>Add Recipe</h2>
+            <form id="addRecipeForm">
+                <label for="recipeName">Recipe Name:</label>
+                <input type="text" id="recipeName" required>
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" rows="4" required></textarea>
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" rows="4" required></textarea>
+                <button type="button" onclick="addRecipe()">Save Recipe</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
